@@ -1,0 +1,355 @@
+html {
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: #CDCDC0;
+}
+
+body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    grid-column-start: 2;
+}
+
+.motto {
+    display: flex;
+    float: left;
+    right: 15px;
+    color: black;
+    font-style: italic;
+    /* padding: 1px 20px 15px 20px; 15px */
+    text-decoration: none;
+    font-size: 24px; 
+    border-radius: 4px;
+  } 
+
+.title {
+    color: white;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 64px;
+    margin: auto;
+    margin-top: -0.2em; /* allows the border to overlap with the header */
+    width: 800px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin: -8px -8px 0px -8px;
+    padding: 10px 20px 10px 40px;
+    background-color: #DDBC95;
+    font-style: italic;
+    flex-wrap: wrap;
+} 
+
+.button {
+    position: absolute;
+    right: 180px;
+    text-align: end;
+    border-top: 1px solid #030003;
+    background: -moz-linear-gradient(top, #ffffff, #ffffff);
+    border-radius: 20px;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+}
+
+.button:hover {
+    border-top-color: #7a6d5e;
+    background: #7a6d5e;
+    color: #ccc;
+}
+
+.button:active {
+    border-top-color: #1b435e;
+    background: #1b435e;
+}
+
+.header a:nth-child(-n+4) { 
+    display: flex;
+    float: left;
+    padding: 15px 20px 15px 20px;
+    text-decoration: none;
+    font-size: 24px; 
+}
+
+.header-item-5 {
+    display: flex;
+    float: left;
+    position: absolute;
+    right: 15px;
+    text-align: end;
+    padding: 15px 20px 15px 20px;
+    text-decoration: none;
+    font-size: 24px; 
+}
+
+.header a:link {
+    color:black;
+} 
+
+
+.header a:visited {
+    color: rgb(5, 5, 95);
+}  
+
+.header a:hover {
+    color: lavender;
+    /* background-color: #ddd;
+    height: 24px; */
+} 
+
+.header a:active {
+    color: white;
+}
+
+.about {
+    display: flex;
+    position: relative;
+    top: 150px;
+}
+
+.about p {
+    justify-content: start;
+    text-align: match-parent;
+}
+
+.about ul {
+    position: relative;
+    margin: -20px 20px auto -100px;
+}
+
+.about li {
+    margin-top: 30px;
+    font-size: 18px;
+    margin-left: -50px;
+}
+
+aside {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: start;
+    width: 200px;
+    height: 1200px;
+    font-style: italic;
+    font-size: 24px;
+    /* background-color: rgb(154, 162, 165); */
+    top: 0px;
+    left: 0px;
+}
+
+.aside a {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px; /* the gap between the items */
+    margin-left: 20px;
+    width: 120px; /* so the text won't be wrapped */
+    padding: 15px 20px 15px 20px;
+    text-decoration: none;
+}
+
+.aside a:link {
+    color:black;
+} 
+
+.aside a:visited {
+    color: rgb(5, 5, 95);
+}
+
+.aside a:hover {
+    color: lavender;
+} 
+
+.aside a:active {
+    color: white;
+}
+
+.container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 200px 1fr 50px;
+    grid-gap: 10px;
+}
+
+main {
+    grid-column-start: 2;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end; 
+    justify-content: center;
+    border: solid;
+    border-top-color: black;
+    border-collapse: separate;
+    border-spacing: 20px;
+    margin-left: 200px;
+}
+
+.follow {
+    display: none;
+}
+
+
+/* // Mobile Phone \\ */
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        font-size: 20px;
+        padding: 10px 10px 10px 100px;
+    }
+
+    .header a {
+        display: flex;
+        justify-items: center;
+        font-size: 24px;
+    }
+
+    .title {
+        width: 75%;
+    }
+
+    .motto {
+        display: flex;
+        float: right;
+        font-size: 15px;
+        color: black;
+        font-style: italic;
+    }
+
+    .aside {
+        flex-direction: column;
+        height: 200px;
+        width: 200px;
+        padding: 20px 20px 10px 20px;
+        font-style: italic;
+        position: relative;
+        margin-top: -23em;
+        margin-bottom: 10em;
+        margin-left: 350px;
+    }
+
+    .aside a { 
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: auto;
+        font-size: 24px;
+        width: 200px;
+    }
+
+    .aside a, .header a {
+        display: flex;
+        justify-content: stretch;
+    }
+
+    .motto {
+        display: flex;
+        float: right;
+    }
+
+    .container {
+        display: flex;
+        flex: 2 0px;
+        justify-content: flex-start;
+        align-self: flex-start;
+        flex-direction: column;
+        text-align: center;      
+    }
+    
+    .follow {
+        display: inline-block;
+    }
+
+    .design {
+        display: none;
+    }
+
+    .header-item-5 {
+        visibility: hidden;
+    }
+
+
+}
+.header {
+    flex-direction: column;
+    font-size: 20px;
+    padding: 10px 10px 10px 100px;
+}
+
+.header a {
+    display: flex;
+    justify-items: center;
+    font-size: 24px;
+}
+
+.title {
+    width: 75%;
+}
+
+.motto {
+    display: flex;
+    float: right;
+    font-size: 15px;
+    color: black;
+    font-style: italic;
+}
+
+.aside {
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    padding: 20px 20px 10px 20px;
+    font-style: italic;
+    position: relative;
+    margin-top: -15.5em;
+    margin-bottom: 10em;
+    margin-left: 350px;
+    background-color: transparent;
+}
+
+.aside a { 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: auto;
+    font-size: 24px;
+    width: 200px;
+}
+
+.aside a, .header a {
+    display: flex;
+    justify-content: stretch;
+}
+
+.motto {
+    display: flex;
+    float: right;
+}
+
+.container {
+    display: flex;
+    flex: 2 0px;
+    justify-content: flex-start;
+    align-self: flex-start;
+    flex-direction: column;
+    text-align: center;      
+}
+
+.follow {
+    display: inline-block;
+}
+
+.design {
+    display: none;
+}
+
+.header-item-5 {
+    visibility: hidden;
+}

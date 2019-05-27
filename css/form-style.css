@@ -1,0 +1,350 @@
+html {
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: #CDCDC0;
+}
+
+.image {
+    background-image: url("back3.jpg");
+    background-size: cover;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    filter: blur(8px);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body {
+    position: absolute;
+    height: 630px;
+    position: fixed;
+    width: 100%;
+    /* height: 100%; */
+}
+
+p {
+    grid-column-start: 2;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h2 {
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#textArea {
+    display: none;
+    color: red
+}
+
+.title {
+    color: black;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 64px;
+    margin: auto;
+    margin-top: -0.2em; /* allows the border to overlap with the header */
+    width: 800px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin: -8px -8px 0px -8px;
+    padding: 10px 20px 10px 40px;
+    background-color: #e08a8a;
+    font-style: italic;
+    flex-wrap: wrap;
+} 
+
+.header a {
+    display: flex;
+    float: left;
+    padding: 15px 20px 15px 20px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.header a:nth-child(-n+4) { 
+    display: flex;
+    float: left;
+    padding: 15px 20px 15px 20px;
+    text-decoration: none;
+    font-size: 24px; 
+}
+
+.header-item-5 {
+    display: flex;
+    float: left;
+    position: relative;
+    right: -4em;
+    /* position: absolute;
+    right: 15px; */
+    text-align: end;
+    padding: 15px 20px 15px 20px;
+    text-decoration: none;
+    font-size: 24px; 
+}
+
+.header a:link {
+    color:black;
+} 
+
+.header a:visited {
+    color: rgb(5, 5, 95);
+}  
+
+.header a:hover {
+    color: lavender;
+} 
+
+.header a:active {
+    color: white;
+}
+
+.button {
+    position: absolute;
+    right: 100px;
+    border: 0.16em solid rgba(255,255,255,0);
+    border-radius: 2em;
+    border-color: rgba(255,255,255,1);
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    transition: all 0.2s;
+    margin-top: 6px;
+}
+      
+.button:hover{
+    background-color: rgb(187, 209, 213);
+    border-color: 0.16em solid rgba(255,255,255,0);
+}
+
+.button:active {
+    border-top-color: #1b435e;
+    background: #1b435e;
+}
+
+.about {
+    display: flex;
+    position: relative;
+    top: 150px;
+}
+
+.social {
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-repeat: no-repeat;
+    margin-right: -20px;
+}
+
+.facebook {
+    background-image: url("http://deelive.cz/content/themes/deelive/assets/img/icons/facebook.png");
+    background-size: contain;
+    margin-top: -6px;
+}
+
+.instagram {
+    background-image: url("https://www.nia-sperky.cz/user/documents/upload/insta.png");
+    background-size: contain;
+    margin-top: -6px;
+}
+
+.tumblr {
+    background-image: url("http://cdn.onlinewebfonts.com/svg/img_154329.png");
+    background-size: contain;
+    margin-top: -6px;
+}
+
+aside {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 200px;
+    height: 1200px;
+    font-style: italic;
+    font-size: 26px;
+    background-color: rgb(130, 172, 189);
+    top: 0px;
+    left: 0px;
+}
+
+.aside a {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+    margin-left: 8px;
+    width: 120px;
+    padding: 15px 20px 15px 20px;
+    text-decoration: none;
+}
+
+.aside a:link {
+    color:black;
+} 
+
+.aside a:visited {
+    color: rgb(5, 5, 95);
+}
+
+.aside a:hover {
+    color: lavender;
+} 
+
+.aside a:active {
+    color: white;
+}
+
+main {
+    grid-column-start: 2;   
+}
+
+.motto {
+    display: flex;
+    float: right;
+    right: 15px;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 26px;
+    border-radius: 4px;
+} 
+
+span {
+    color:red
+}
+    
+h2 {
+    text-align: initial;
+    border-radius: 10px 10px 0 0;
+    margin: -10px -15px;
+    padding: 15px
+}
+    
+hr {
+    border:0;
+    border-bottom:1px solid;
+    margin:10px -40px;
+    margin-bottom:30px
+}
+    
+#login {
+    font-size: 24px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin: 15px 15px 0px;
+    display: inline-block;
+    background: #f1f1f1;
+    font-size: 16px;
+}
+  
+td {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+  
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr 50px;
+    grid-gap: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    height: 100%;
+}
+  
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+  
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+    border: 1px solid black;
+}
+    
+input[type=submit] {
+    border: 0.16em solid rgba(255,255,255,0);
+    border-radius: 2em;
+    border-color: rgba(255,255,255,1);
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    font-size: 26px;
+    cursor: pointer;
+} 
+
+input[type=submit]:hover {
+    background-color: rgb(187, 209, 213);
+    border-color: 0.16em solid rgba(255,255,255,0);
+} 
+
+#profile {
+    padding:50px;
+    border:1px dashed grey;
+    font-size:20px;
+    background-color:#DCE6F7
+}
+    
+#logout {
+    float:right;
+    padding:5px;
+    border:dashed 1px gray
+}
+    
+a {
+    text-decoration:none;
+    color:#6495ed
+}
+    
+i {
+    color:#6495ed
+}
+
+.follow {
+    display: none;
+    float: right;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 75%;
+      margin-top: 0;
+    }
+}
+
