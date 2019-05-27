@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<!-- to be changed in "en" -->
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Improve Yourself - Register Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/register-style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="header">
+      <a class="header-item-1 menu-item-active" href="./main.html" style="color: black;">Home</a>
+      <a class="header-item-2" href="./about.html" style="color: black;">About Us</a>
+      <a class="header-item-3" href="./videos.html" style="color: black;">Videos</a>
+      <a class="button" style="color:white" href="./register.html" >Login / Sign Up</a>
+      <div class="header-item-5">Follow Us:
+          <a href="https://www.facebook.com/becky.deea"><span class="social facebook"></span></a>
+          <a href="https://www.instagram.com/andreea_becky/?hl=ro"><span class="social instagram"></span></a>
+          <a href="https://www.tumblr.com/blog/rockingdemons"><span class="social tumblr"></span></a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="image"></div>
+
+  <h1 class="title" style="font-size:5vw;">Improve Yourself</h1>
+
+  <aside class="aside">
+    <a class="aside-prod" href="./productivity.html">Productivity</a>
+    <a class="aside-motiv" href="./motivation.html">Motivation</a>
+    <a class="aside-insp" href="./inspiration.html">Inspiration</a>
+    <a class="aside-community" href="./community.php">Community</a>
+  </aside>
+
+  <div class="container">
+    <main>
+      <h2 style="color: white;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;font-size: xx-large;">Register</h2>
+      <form action="insert.php" method="POST" autocomplete="off">
+        <table style="color: white;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;font-size: x-large;">
+          <tr>
+            <td>Name :</td>
+            <td><input type="text" name="username" style="margin-left: 13px" placeholder="Your username" required></td>
+          </tr>
+          <tr>
+            <td>Password :</td>
+            <td><input type="password" name="password" placeholder="Your password" required></td>
+          </tr>
+          <tr>
+            <td>Email :</td>
+            <td><input type="email" name="email" style="margin-left: 15px; margin-top: 10px; height: 15px;" placeholder="Your email" required></td>
+          </tr>
+          <tr>
+            <td>Country :</td>
+            <td>
+              <div class="autocomplete" style="width: 100%; margin-left: 0px; margin-top: 10px; margin-left: 15px;">
+                <input id="myInput" type="text" name="country" placeholder="Country" style="margin-left: 0px !important;" required>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <input type="submit" style="margin-top: 10px; width: -moz-fit-content;" class="registerbtn" value="Submit">
+      </form>
+      <p style="color: white;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;font-size: x-large;">
+        Already a member? <a href="form.php">Sign in</a>
+      </p>
+    </main>
+  </div>
+
+
+  <script src="autocomplete.js"></script>
+
+</body>
+
+</html>
